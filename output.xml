@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.5 on darwin)" generated="2025-05-29T22:31:20.982788" rpa="false" schemaversion="5">
+<suite id="s1" name="Create User" source="/Users/pedropimenta/Developer/zkipster_web_automation_qa_assignment_pedro_pimenta/create_user.robot">
+<test id="s1-t1" name="Create new user" line="18">
+<kw name="New Page" owner="Browser">
+<msg time="2025-05-29T22:31:21.475718" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:60416</msg>
+<msg time="2025-05-29T22:31:24.927506" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/webtables</msg>
+<msg time="2025-05-29T22:31:24.927779" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-05-29T22:31:21.422668" elapsed="3.505468"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Opened the web tables page</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-29T22:31:24.928916" elapsed="0.000425"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-29T22:31:24.929940" level="INFO">Clicks the element 'id=addNewRecordButton'.</msg>
+<arg>id=addNewRecordButton</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-29T22:31:24.929474" elapsed="0.090155"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-29T22:31:25.020375" level="INFO">Fills the text 'Sheldon' in the given field.</msg>
+<arg>id=firstName</arg>
+<arg>${firstName}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-29T22:31:25.019902" elapsed="0.008235"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-29T22:31:25.028664" level="INFO">Fills the text 'Cooper' in the given field.</msg>
+<arg>id=lastName</arg>
+<arg>${lastName}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-29T22:31:25.028322" elapsed="0.005175"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-29T22:31:25.033953" level="INFO">Fills the text 'sheldon.cooper@bigbangtheory.tv' in the given field.</msg>
+<arg>id=userEmail</arg>
+<arg>${userEmail}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-29T22:31:25.033665" elapsed="0.003875"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-29T22:31:25.038037" level="INFO">Fills the text '30' in the given field.</msg>
+<arg>id=age</arg>
+<arg>${age}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-29T22:31:25.037700" elapsed="0.004339"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-29T22:31:25.042501" level="INFO">Fills the text '200000' in the given field.</msg>
+<arg>id=salary</arg>
+<arg>${salary}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-29T22:31:25.042215" elapsed="0.004120"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-29T22:31:25.046796" level="INFO">Fills the text 'Physics' in the given field.</msg>
+<arg>id=department</arg>
+<arg>${department}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-29T22:31:25.046485" elapsed="0.004182"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-29T22:31:25.050995" level="INFO">Clicks the element 'id=submit'.</msg>
+<arg>id=submit</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-29T22:31:25.050794" elapsed="0.411271"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>User created</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-29T22:31:25.462229" elapsed="0.000149"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-29T22:31:25.477080" level="INFO">Text: 'Sheldon'</msg>
+<msg time="2025-05-29T22:31:25.477212" level="INFO">${column_firstName} = Sheldon</msg>
+<var>${column_firstName}</var>
+<arg>css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(1)</arg>
+<arg>==</arg>
+<arg>${firstName}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-29T22:31:25.462465" elapsed="0.014762"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-29T22:31:25.482166" level="INFO">Text: 'Cooper'</msg>
+<msg time="2025-05-29T22:31:25.482259" level="INFO">${column_lastName} = Cooper</msg>
+<var>${column_lastName}</var>
+<arg>css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(2)</arg>
+<arg>==</arg>
+<arg>${lastName}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-29T22:31:25.477362" elapsed="0.004912"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-29T22:31:25.486740" level="INFO">Text: '30'</msg>
+<msg time="2025-05-29T22:31:25.486815" level="INFO">${column_age} = 30</msg>
+<var>${column_age}</var>
+<arg>css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(3)</arg>
+<arg>==</arg>
+<arg>${age}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-29T22:31:25.482413" elapsed="0.004414"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-29T22:31:25.491922" level="INFO">Text: 'sheldon.cooper@bigbangtheory.tv'</msg>
+<msg time="2025-05-29T22:31:25.492001" level="INFO">${column_email} = sheldon.cooper@bigbangtheory.tv</msg>
+<var>${column_email}</var>
+<arg>css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(4)</arg>
+<arg>==</arg>
+<arg>${userEmail}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-29T22:31:25.486942" elapsed="0.005072"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-29T22:31:25.496525" level="INFO">Text: '200000'</msg>
+<msg time="2025-05-29T22:31:25.496615" level="INFO">${column_salary} = 200000</msg>
+<var>${column_salary}</var>
+<arg>css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(5)</arg>
+<arg>==</arg>
+<arg>${salary}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-29T22:31:25.492116" elapsed="0.004513"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-29T22:31:25.501281" level="INFO">Text: 'Physics'</msg>
+<msg time="2025-05-29T22:31:25.501356" level="INFO">${column_dept} = Physics</msg>
+<var>${column_dept}</var>
+<arg>css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(6)</arg>
+<arg>==</arg>
+<arg>${department}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-29T22:31:25.496757" elapsed="0.004612"/>
+</kw>
+<msg time="2025-05-29T22:31:25.505850" level="INFO">Switching context to context=a4eba3de-b2e5-4020-9379-28fab8b4686a in CURRENT</msg>
+<msg time="2025-05-29T22:31:25.508020" level="INFO">Successfully changed active context: context=a4eba3de-b2e5-4020-9379-28fab8b4686a</msg>
+<msg time="2025-05-29T22:31:25.513936" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-05-29T22:31:21.422158" elapsed="4.079327"/>
+</test>
+<status status="PASS" start="2025-05-29T22:31:20.983306" elapsed="4.531018"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Create User" id="s1" pass="1" fail="0" skip="0">Create User</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

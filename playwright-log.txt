@@ -1,0 +1,75 @@
+{"level":30,"time":"2025-05-29T21:31:21.825Z","pid":74640,"hostname":"Mac.lan","msg":"Listening on 127.0.0.1:60416"}
+(node:74640) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-05-29T21:31:22.919Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-05-29T21:31:22.920Z","pid":74640,"hostname":"Mac.lan","msg":"currentBrowser: undefined"}
+{"level":30,"time":"2025-05-29T21:31:23.158Z","pid":74640,"hostname":"Mac.lan","msg":"Changed active context"}
+{"level":30,"time":"2025-05-29T21:31:23.285Z","pid":74640,"hostname":"Mac.lan","msg":"Video path: undefined"}
+{"level":30,"time":"2025-05-29T21:31:23.285Z","pid":74640,"hostname":"Mac.lan","msg":"Changed active page"}
+{"level":30,"time":"2025-05-29T21:31:24.926Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method newPage"}
+{"level":30,"time":"2025-05-29T21:31:24.931Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-29T21:31:24.931Z","pid":74640,"hostname":"Mac.lan","msg":"Strict mode is enabled, find Locator with id=addNewRecordButton in page."}
+{"level":30,"time":"2025-05-29T21:31:25.018Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method click"}
+{"level":30,"time":"2025-05-29T21:31:25.021Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-05-29T21:31:25.021Z","pid":74640,"hostname":"Mac.lan","msg":"Strict mode is enabled, find Locator with id=firstName in page."}
+{"level":30,"time":"2025-05-29T21:31:25.027Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method fillText"}
+{"level":30,"time":"2025-05-29T21:31:25.029Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-05-29T21:31:25.029Z","pid":74640,"hostname":"Mac.lan","msg":"Strict mode is enabled, find Locator with id=lastName in page."}
+{"level":30,"time":"2025-05-29T21:31:25.032Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method fillText"}
+{"level":30,"time":"2025-05-29T21:31:25.034Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-05-29T21:31:25.034Z","pid":74640,"hostname":"Mac.lan","msg":"Strict mode is enabled, find Locator with id=userEmail in page."}
+{"level":30,"time":"2025-05-29T21:31:25.037Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method fillText"}
+{"level":30,"time":"2025-05-29T21:31:25.038Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-05-29T21:31:25.038Z","pid":74640,"hostname":"Mac.lan","msg":"Strict mode is enabled, find Locator with id=age in page."}
+{"level":30,"time":"2025-05-29T21:31:25.041Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method fillText"}
+{"level":30,"time":"2025-05-29T21:31:25.042Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-05-29T21:31:25.043Z","pid":74640,"hostname":"Mac.lan","msg":"Strict mode is enabled, find Locator with id=salary in page."}
+{"level":30,"time":"2025-05-29T21:31:25.045Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method fillText"}
+{"level":30,"time":"2025-05-29T21:31:25.047Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-05-29T21:31:25.047Z","pid":74640,"hostname":"Mac.lan","msg":"Strict mode is enabled, find Locator with id=department in page."}
+{"level":30,"time":"2025-05-29T21:31:25.049Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method fillText"}
+{"level":30,"time":"2025-05-29T21:31:25.051Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-29T21:31:25.051Z","pid":74640,"hostname":"Mac.lan","msg":"Strict mode is enabled, find Locator with id=submit in page."}
+{"level":30,"time":"2025-05-29T21:31:25.461Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method click"}
+{"level":30,"time":"2025-05-29T21:31:25.463Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-29T21:31:25.463Z","pid":74640,"hostname":"Mac.lan","msg":"Strict mode is enabled, find Locator with css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(1) in page."}
+{"level":30,"time":"2025-05-29T21:31:25.476Z","pid":74640,"hostname":"Mac.lan","msg":"Retrieved text for element css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(1) containing Sheldon"}
+{"level":30,"time":"2025-05-29T21:31:25.476Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-29T21:31:25.478Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-29T21:31:25.478Z","pid":74640,"hostname":"Mac.lan","msg":"Strict mode is enabled, find Locator with css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(2) in page."}
+{"level":30,"time":"2025-05-29T21:31:25.481Z","pid":74640,"hostname":"Mac.lan","msg":"Retrieved text for element css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(2) containing Cooper"}
+{"level":30,"time":"2025-05-29T21:31:25.481Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-29T21:31:25.483Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-29T21:31:25.483Z","pid":74640,"hostname":"Mac.lan","msg":"Strict mode is enabled, find Locator with css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(3) in page."}
+{"level":30,"time":"2025-05-29T21:31:25.486Z","pid":74640,"hostname":"Mac.lan","msg":"Retrieved text for element css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(3) containing 30"}
+{"level":30,"time":"2025-05-29T21:31:25.486Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-29T21:31:25.487Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-29T21:31:25.487Z","pid":74640,"hostname":"Mac.lan","msg":"Strict mode is enabled, find Locator with css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(4) in page."}
+{"level":30,"time":"2025-05-29T21:31:25.491Z","pid":74640,"hostname":"Mac.lan","msg":"Retrieved text for element css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(4) containing sheldon.cooper@bigbangtheory.tv"}
+{"level":30,"time":"2025-05-29T21:31:25.491Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-29T21:31:25.492Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-29T21:31:25.492Z","pid":74640,"hostname":"Mac.lan","msg":"Strict mode is enabled, find Locator with css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(5) in page."}
+{"level":30,"time":"2025-05-29T21:31:25.496Z","pid":74640,"hostname":"Mac.lan","msg":"Retrieved text for element css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(5) containing 200000"}
+{"level":30,"time":"2025-05-29T21:31:25.496Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-29T21:31:25.497Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-29T21:31:25.497Z","pid":74640,"hostname":"Mac.lan","msg":"Strict mode is enabled, find Locator with css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(6) in page."}
+{"level":30,"time":"2025-05-29T21:31:25.500Z","pid":74640,"hostname":"Mac.lan","msg":"Retrieved text for element css=.rt-tr-group:nth-of-type(4) .rt-td:nth-of-type(6) containing Physics"}
+{"level":30,"time":"2025-05-29T21:31:25.501Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method getText"}
+{"level":30,"time":"2025-05-29T21:31:25.503Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-29T21:31:25.503Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-29T21:31:25.504Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-29T21:31:25.504Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-29T21:31:25.505Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-29T21:31:25.505Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-29T21:31:25.506Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-29T21:31:25.506Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-29T21:31:25.507Z","pid":74640,"hostname":"Mac.lan","msg":"Changed active context"}
+{"level":30,"time":"2025-05-29T21:31:25.507Z","pid":74640,"hostname":"Mac.lan","msg":"Changing current active page: page=7ff9ce78-5120-4f64-8744-540c87c4ab25"}
+{"level":30,"time":"2025-05-29T21:31:25.507Z","pid":74640,"hostname":"Mac.lan","msg":"Changed active page"}
+{"level":30,"time":"2025-05-29T21:31:25.508Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-05-29T21:31:25.511Z","pid":74640,"hostname":"Mac.lan","msg":"Removed page=85655b5e-214c-4a62-8717-511b00842d91 from context=a4eba3de-b2e5-4020-9379-28fab8b4686a page stack"}
+{"level":30,"time":"2025-05-29T21:31:25.513Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-05-29T21:31:25.515Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-29T21:31:25.515Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-29T21:31:25.529Z","pid":74640,"hostname":"Mac.lan","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-05-29T21:31:25.549Z","pid":74640,"hostname":"Mac.lan","msg":"End of node method closeAllBrowsers"}
