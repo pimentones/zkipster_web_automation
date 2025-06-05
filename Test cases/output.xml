@@ -1,124 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.11.5 on darwin)" generated="2025-06-05T14:36:10.732929" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.11.5 on darwin)" generated="2025-06-05T14:55:03.371626" rpa="false" schemaversion="5">
 <suite id="s1" name="Create User Data Driven" source="/Users/pedropimenta/Developer/zkipster_web_automation_qa_assignment_pedro_pimenta/Test cases/create_user_data_driven.robot">
 <kw name="Start TestCase" owner="common" type="SETUP">
-<kw name="Open Browser" owner="Browser">
-<msg time="2025-06-05T14:36:10.818016" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg time="2025-06-05T14:36:10.818153" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/pedropimenta/Developer/zkipster_web_automation_qa_assignment_pedro_pimenta/Test cases/browser/traces/temp/f2c93ead-4808-4060-8bf0-d63141b0fbf9"}</msg>
-<msg time="2025-06-05T14:36:10.837532" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:63090</msg>
-<msg time="2025-06-05T14:36:12.543376" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/pedropimenta/Developer/zkipster_web_automation_qa_assignment_pedro_pimenta/Test cases/browser/traces/temp/f2c93ead-4808-4060-8bf0-d63141b0fbf9"}</msg>
-<msg time="2025-06-05T14:36:12.544031" level="INFO">{
-  "acceptDownloads": true,
-  "bypassCSP": true,
-  "forcedColors": "none",
-  "ignoreHTTPSErrors": false,
-  "javaScriptEnabled": true,
-  "offline": false,
-  "reducedMotion": "no-preference",
-  "serviceWorkers": "allow",
-  "viewport": {
-    "width": 1280,
-    "height": 720
-  }
-}</msg>
-<msg time="2025-06-05T14:36:12.553307" level="INFO">Successfully created context. </msg>
-<msg time="2025-06-05T14:36:12.553358" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
-<msg time="2025-06-05T14:36:14.539799" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/webtables</msg>
+<kw name="New Page" owner="Browser">
+<msg time="2025-06-05T14:55:03.456175" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/Browser/wrapper/index.js using at 127.0.0.1:54472</msg>
+<msg time="2025-06-05T14:55:06.189383" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/webtables</msg>
+<msg time="2025-06-05T14:55:06.189504" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
 <arg>https://demoqa.com/webtables</arg>
-<arg>chromium</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
-<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
-<status status="PASS" start="2025-06-05T14:36:10.817740" elapsed="3.722423"/>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-06-05T14:55:03.436593" elapsed="2.753113"/>
 </kw>
 <kw name="Set Viewport Size" owner="Browser">
-<msg time="2025-06-05T14:36:14.546456" level="INFO">Set viewport size to: [object Object]</msg>
+<msg time="2025-06-05T14:55:06.196308" level="INFO">Set viewport size to: [object Object]</msg>
 <arg>1600</arg>
 <arg>900</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Sets current Pages viewport size to specified dimensions.</doc>
-<status status="PASS" start="2025-06-05T14:36:14.540673" elapsed="0.005898"/>
+<status status="PASS" start="2025-06-05T14:55:06.190061" elapsed="0.006356"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-05T14:36:15.548318" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-05T14:36:14.546750" elapsed="1.001739"/>
+<status status="PASS" start="2025-06-05T14:55:03.436306" elapsed="2.760223"/>
 </kw>
-<status status="PASS" start="2025-06-05T14:36:10.817453" elapsed="4.731236"/>
-</kw>
-<test id="s1-t1" name="Create Sheldon" line="12">
+<test id="s1-t1" name="Create Sheldon" line="10">
 <kw name="Create new user">
 <kw name="Click" owner="Browser">
-<msg time="2025-06-05T14:36:15.558954" level="INFO">Clicks the element 'id=addNewRecordButton'.</msg>
+<msg time="2025-06-05T14:55:06.205908" level="INFO">Clicks the element 'id=addNewRecordButton'.</msg>
 <arg>id=addNewRecordButton</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:15.558413" elapsed="0.073430"/>
+<status status="PASS" start="2025-06-05T14:55:06.205652" elapsed="0.093102"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:15.632961" level="INFO">Fills the text 'Sheldon' in the given field.</msg>
+<msg time="2025-06-05T14:55:06.299377" level="INFO">Fills the text 'Sheldon' in the given field.</msg>
 <arg>id=firstName</arg>
 <arg>${firstName}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:15.632406" elapsed="0.033769"/>
+<status status="PASS" start="2025-06-05T14:55:06.298961" elapsed="0.006658"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:15.666646" level="INFO">Fills the text 'Cooper' in the given field.</msg>
+<msg time="2025-06-05T14:55:06.306106" level="INFO">Fills the text 'Cooper' in the given field.</msg>
 <arg>id=lastName</arg>
 <arg>${lastName}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:15.666328" elapsed="0.005347"/>
+<status status="PASS" start="2025-06-05T14:55:06.305793" elapsed="0.004777"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:15.672112" level="INFO">Fills the text 'sheldon.cooper@bigbangtheory.tv' in the given field.</msg>
+<msg time="2025-06-05T14:55:06.311012" level="INFO">Fills the text 'sheldon.cooper@bigbangtheory.tv' in the given field.</msg>
 <arg>id=userEmail</arg>
 <arg>${userEmail}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:15.671806" elapsed="0.004257"/>
+<status status="PASS" start="2025-06-05T14:55:06.310709" elapsed="0.003858"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:15.676409" level="INFO">Fills the text '30' in the given field.</msg>
+<msg time="2025-06-05T14:55:06.314911" level="INFO">Fills the text '30' in the given field.</msg>
 <arg>id=age</arg>
 <arg>${age}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:15.676176" elapsed="0.003705"/>
+<status status="PASS" start="2025-06-05T14:55:06.314676" elapsed="0.004523"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:15.680275" level="INFO">Fills the text '200000' in the given field.</msg>
+<msg time="2025-06-05T14:55:06.319600" level="INFO">Fills the text '200000' in the given field.</msg>
 <arg>id=salary</arg>
 <arg>${salary}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:15.679998" elapsed="0.004559"/>
+<status status="PASS" start="2025-06-05T14:55:06.319347" elapsed="0.003929"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:15.684900" level="INFO">Fills the text 'Physics' in the given field.</msg>
+<msg time="2025-06-05T14:55:06.323598" level="INFO">Fills the text 'Physics' in the given field.</msg>
 <arg>id=department</arg>
 <arg>${department}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:15.684667" elapsed="0.005808"/>
+<status status="PASS" start="2025-06-05T14:55:06.323370" elapsed="0.004174"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-06-05T14:36:15.690965" level="INFO">Clicks the element 'id=submit'.</msg>
+<msg time="2025-06-05T14:55:06.327810" level="INFO">Clicks the element 'id=submit'.</msg>
 <arg>id=submit</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:15.690578" elapsed="0.384953"/>
+<status status="PASS" start="2025-06-05T14:55:06.327621" elapsed="0.448169"/>
 </kw>
 <arg>firstName=Sheldon</arg>
 <arg>lastName=Cooper</arg>
@@ -126,81 +101,81 @@
 <arg>age=30</arg>
 <arg>salary=200000</arg>
 <arg>department=Physics</arg>
-<status status="PASS" start="2025-06-05T14:36:15.557741" elapsed="0.518012"/>
+<status status="PASS" start="2025-06-05T14:55:06.205369" elapsed="0.570513"/>
 </kw>
-<status status="PASS" start="2025-06-05T14:36:15.548849" elapsed="0.527263"/>
+<status status="PASS" start="2025-06-05T14:55:06.196626" elapsed="0.579409"/>
 </test>
-<test id="s1-t2" name="Create Penny" line="12">
+<test id="s1-t2" name="Create Penny" line="10">
 <kw name="Create new user">
 <kw name="Click" owner="Browser">
-<msg time="2025-06-05T14:36:16.085001" level="INFO">Clicks the element 'id=addNewRecordButton'.</msg>
+<msg time="2025-06-05T14:55:06.781815" level="INFO">Clicks the element 'id=addNewRecordButton'.</msg>
 <arg>id=addNewRecordButton</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:16.084682" elapsed="0.262868"/>
+<status status="PASS" start="2025-06-05T14:55:06.781557" elapsed="0.276695"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:16.348231" level="INFO">Fills the text 'Penny' in the given field.</msg>
+<msg time="2025-06-05T14:55:07.059111" level="INFO">Fills the text 'Penny' in the given field.</msg>
 <arg>id=firstName</arg>
 <arg>${firstName}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:16.347761" elapsed="0.017645"/>
+<status status="PASS" start="2025-06-05T14:55:07.058483" elapsed="0.020160"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:16.365949" level="INFO">Fills the text 'Hofstadter' in the given field.</msg>
+<msg time="2025-06-05T14:55:07.079231" level="INFO">Fills the text 'Hofstadter' in the given field.</msg>
 <arg>id=lastName</arg>
 <arg>${lastName}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:16.365566" elapsed="0.005380"/>
+<status status="PASS" start="2025-06-05T14:55:07.078824" elapsed="0.004467"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:16.371545" level="INFO">Fills the text 'penny.hofstadter@bigbangtheory.tv' in the given field.</msg>
+<msg time="2025-06-05T14:55:07.083756" level="INFO">Fills the text 'penny.hofstadter@bigbangtheory.tv' in the given field.</msg>
 <arg>id=userEmail</arg>
 <arg>${userEmail}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:16.371163" elapsed="0.004735"/>
+<status status="PASS" start="2025-06-05T14:55:07.083409" elapsed="0.003930"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:16.376271" level="INFO">Fills the text '28' in the given field.</msg>
+<msg time="2025-06-05T14:55:07.087757" level="INFO">Fills the text '28' in the given field.</msg>
 <arg>id=age</arg>
 <arg>${age}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:16.376003" elapsed="0.004097"/>
+<status status="PASS" start="2025-06-05T14:55:07.087448" elapsed="0.003387"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:16.380466" level="INFO">Fills the text '95000' in the given field.</msg>
+<msg time="2025-06-05T14:55:07.091102" level="INFO">Fills the text '95000' in the given field.</msg>
 <arg>id=salary</arg>
 <arg>${salary}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:16.380207" elapsed="0.004457"/>
+<status status="PASS" start="2025-06-05T14:55:07.090911" elapsed="0.002606"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:16.385114" level="INFO">Fills the text 'Sales' in the given field.</msg>
+<msg time="2025-06-05T14:55:07.093778" level="INFO">Fills the text 'Sales' in the given field.</msg>
 <arg>id=department</arg>
 <arg>${department}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:16.384804" elapsed="0.005016"/>
+<status status="PASS" start="2025-06-05T14:55:07.093587" elapsed="0.002634"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-06-05T14:36:16.390292" level="INFO">Clicks the element 'id=submit'.</msg>
+<msg time="2025-06-05T14:55:07.096454" level="INFO">Clicks the element 'id=submit'.</msg>
 <arg>id=submit</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:16.389972" elapsed="0.384479"/>
+<status status="PASS" start="2025-06-05T14:55:07.096295" elapsed="0.375367"/>
 </kw>
 <arg>firstName=Penny</arg>
 <arg>lastName=Hofstadter</arg>
@@ -208,81 +183,81 @@
 <arg>age=28</arg>
 <arg>salary=95000</arg>
 <arg>department=Sales</arg>
-<status status="PASS" start="2025-06-05T14:36:16.084286" elapsed="0.690370"/>
+<status status="PASS" start="2025-06-05T14:55:06.781258" elapsed="0.690730"/>
 </kw>
-<status status="PASS" start="2025-06-05T14:36:16.081181" elapsed="0.693741"/>
+<status status="PASS" start="2025-06-05T14:55:06.779464" elapsed="0.692785"/>
 </test>
-<test id="s1-t3" name="Create Rajesh" line="12">
+<test id="s1-t3" name="Create Rajesh" line="10">
 <kw name="Create new user">
 <kw name="Click" owner="Browser">
-<msg time="2025-06-05T14:36:16.783600" level="INFO">Clicks the element 'id=addNewRecordButton'.</msg>
+<msg time="2025-06-05T14:55:07.480014" level="INFO">Clicks the element 'id=addNewRecordButton'.</msg>
 <arg>id=addNewRecordButton</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:16.783077" elapsed="0.264920"/>
+<status status="PASS" start="2025-06-05T14:55:07.479652" elapsed="0.253843"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:17.048567" level="INFO">Fills the text 'Rajesh' in the given field.</msg>
+<msg time="2025-06-05T14:55:07.734267" level="INFO">Fills the text 'Rajesh' in the given field.</msg>
 <arg>id=firstName</arg>
 <arg>${firstName}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:17.048157" elapsed="0.009682"/>
+<status status="PASS" start="2025-06-05T14:55:07.733744" elapsed="0.006297"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:17.058355" level="INFO">Fills the text 'Koothrappali' in the given field.</msg>
+<msg time="2025-06-05T14:55:07.740620" level="INFO">Fills the text 'Koothrappali' in the given field.</msg>
 <arg>id=lastName</arg>
 <arg>${lastName}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:17.057989" elapsed="0.004795"/>
+<status status="PASS" start="2025-06-05T14:55:07.740194" elapsed="0.005229"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:17.063214" level="INFO">Fills the text 'raj.koothrappali@bigbangtheory.tv' in the given field.</msg>
+<msg time="2025-06-05T14:55:07.745815" level="INFO">Fills the text 'raj.koothrappali@bigbangtheory.tv' in the given field.</msg>
 <arg>id=userEmail</arg>
 <arg>${userEmail}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:17.062912" elapsed="0.004307"/>
+<status status="PASS" start="2025-06-05T14:55:07.745539" elapsed="0.003894"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:17.067674" level="INFO">Fills the text '33' in the given field.</msg>
+<msg time="2025-06-05T14:55:07.749999" level="INFO">Fills the text '33' in the given field.</msg>
 <arg>id=age</arg>
 <arg>${age}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:17.067337" elapsed="0.004846"/>
+<status status="PASS" start="2025-06-05T14:55:07.749534" elapsed="0.005076"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:17.072599" level="INFO">Fills the text '175000' in the given field.</msg>
+<msg time="2025-06-05T14:55:07.755245" level="INFO">Fills the text '175000' in the given field.</msg>
 <arg>id=salary</arg>
 <arg>${salary}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:17.072306" elapsed="0.004121"/>
+<status status="PASS" start="2025-06-05T14:55:07.754798" elapsed="0.004165"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-05T14:36:17.076982" level="INFO">Fills the text 'Astrophysics' in the given field.</msg>
+<msg time="2025-06-05T14:55:07.759355" level="INFO">Fills the text 'Astrophysics' in the given field.</msg>
 <arg>id=department</arg>
 <arg>${department}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:17.076575" elapsed="0.004006"/>
+<status status="PASS" start="2025-06-05T14:55:07.759057" elapsed="0.003735"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-06-05T14:36:17.081019" level="INFO">Clicks the element 'id=submit'.</msg>
+<msg time="2025-06-05T14:55:07.763110" level="INFO">Clicks the element 'id=submit'.</msg>
 <arg>id=submit</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-06-05T14:36:17.080722" elapsed="0.393042"/>
+<status status="PASS" start="2025-06-05T14:55:07.762889" elapsed="0.375310"/>
 </kw>
 <arg>firstName=Rajesh</arg>
 <arg>lastName=Koothrappali</arg>
@@ -290,11 +265,11 @@
 <arg>age=33</arg>
 <arg>salary=175000</arg>
 <arg>department=Astrophysics</arg>
-<status status="PASS" start="2025-06-05T14:36:16.782540" elapsed="0.691441"/>
+<status status="PASS" start="2025-06-05T14:55:07.479281" elapsed="0.659115"/>
 </kw>
-<status status="PASS" start="2025-06-05T14:36:16.779623" elapsed="0.694628"/>
+<status status="PASS" start="2025-06-05T14:55:07.476462" elapsed="0.662199"/>
 </test>
-<status status="PASS" start="2025-06-05T14:36:10.733478" elapsed="6.744819"/>
+<status status="PASS" start="2025-06-05T14:55:03.372155" elapsed="4.771304"/>
 </suite>
 <statistics>
 <total>
@@ -307,6 +282,5 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2025-06-05T14:36:10.818016" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
 </errors>
 </robot>

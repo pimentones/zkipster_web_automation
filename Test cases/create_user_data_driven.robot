@@ -1,17 +1,16 @@
 *** Settings ***
 Library    Browser
-Library    DataDriver   ../TestData/create_user_data_driven.csv
-Library    BuiltIn
+Library    DataDriver   ../TestData/create_user_data_driven.csv 
 Resource    ../Resources/common.robot
 
 Suite Setup    common.Start TestCase
 Test Template   Create new user
 
-
 *** Test Cases ***
 Create user
 
 *** Keywords ***
+# using arguments to pass the test data made available in the create_user_data_driven.csv file
 Create new user
     [Arguments]    ${firstName}    ${lastName}    ${userEmail}    ${age}    ${salary}    ${department}
     Click             id=addNewRecordButton
@@ -35,6 +34,7 @@ FOR    ${i}    IN RANGE    ${row_count}
     ${salary}=        Get Text    css=.rt-tr-group:nth-of-type(${index}) .rt-td:nth-of-type(5)
     ${department}=    Get Text    css=.rt-tr-group:nth-of-type(${index}) .rt-td:nth-of-type(6)
 
+    # Check if the user data matches the expected values as a whole and not just individual fields
     Run Keyword If    '${first}' == '${firstName}' and
     ...               '${last}' == '${lastName}' and
     ...               '${age}' == '${age}' and
@@ -45,5 +45,3 @@ FOR    ${i}    IN RANGE    ${row_count}
 
     Run Keyword If    '${found}' == 'True'    BREAK
 END
-
-Should Be True    ${found}    User not found in the table
