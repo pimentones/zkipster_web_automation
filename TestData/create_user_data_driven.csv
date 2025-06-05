@@ -1,0 +1,4 @@
+*** Test Cases ***;${firstName};${lastName};${userEmail};${age};${salary};${department}
+Create Sheldon;Sheldon;Cooper;sheldon.cooper@bigbangtheory.tv;30;200000;Physics
+Create Penny;Penny;Hofstadter;penny.hofstadter@bigbangtheory.tv;28;95000;Sales
+Create Rajesh;Rajesh;Koothrappali;raj.koothrappali@bigbangtheory.tv;33;175000;Astrophysics
